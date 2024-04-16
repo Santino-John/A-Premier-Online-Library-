@@ -1,0 +1,151 @@
+.full-modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+
+}
+
+.content-modal {
+    background-color: aliceblue;
+    border-radius: 10px;
+    position: relative;
+    height: 90%;
+    width: 70%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-modal i.bi-x-circle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.img-content {
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.img-content img {
+    height: 100%;
+    width: 100%;
+
+}
+
+button.details {
+    display: block;
+    color: var(--main-color) !important;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.info-book {
+    height: 90%;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.info-book h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+b {
+    font-size: 20px;
+}
+
+b span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+b span:nth-child(1) {
+    color: rgb(35, 110, 92);
+}
+
+.top {
+    margin-top: 25px;
+}
+
+.top.all-info .add-to {
+    padding: 9px 20px;
+    border: 2px solid green;
+    color: green;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 6px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.top.all-info .add-to i {
+    margin-right: 5px;
+}
+
+input {
+    font-size: 30px;
+    margin-right: 6px;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+@media (max-width:900px) {
+    .content-modal {
+        flex-direction: column;
+    }
+
+    .img-content img {
+        height: 90%;
+        width: 100%;
+object-fit: contain;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .top {
+        margin-top: 10px;
+    }
+
+    .top.all-info .add-to {
+        padding: 9px 10px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    input {
+        padding-left: 10px;
+        margin-right: 4px;
+    }
+
+    .info-book {
+        padding-top: 0px;
+    }
+    .content-modal{
+        width: 90%;
+    }
+
+}

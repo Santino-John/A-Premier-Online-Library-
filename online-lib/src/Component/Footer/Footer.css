@@ -1,0 +1,112 @@
+.footer-component{
+    margin-top: 20px;
+    width:100%;
+    padding: 22px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    width:100%;
+    
+}
+.foooooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--main-color);
+   padding-bottom: 15px;
+    width:100%;
+}
+.desc-footer{
+    font-size: 24px;
+    color:var(--main-color);
+    margin-right: 170px;
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+}
+.social-icon {
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    justify-content: center;
+    margin: 0px 7px;
+   
+}
+.footer-icons i{
+font-size: 25px;
+margin: 0px 10px;
+cursor: pointer;
+}
+i.insta{
+    color:rgba(127, 10, 84, 0.758);
+}
+i.telegram{
+color:rgb(41, 130, 209)
+}
+i.facebook{
+color:rgb(57, 57, 236)
+}
+i.youtube{
+color:red;
+}
+.footer-wrapper{
+    display: flex;justify-content: space-between;
+    color:var(--main-color);
+    margin-top: 20px;
+}
+.footer-title{
+    font-weight: 700;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    width:fit-content;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.footer-links,.footer-info,.footer-aboutUs{
+    width:30%;
+}
+.items-link ul li,.items-link-contact ul li{
+    font-size: 18px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.footer-aboutUs p{
+    font-size: 20px;
+    color:rgb(230, 230, 230);
+}
+.items-link-contact ul li{
+    padding-top: 20px;
+}
+.items-link-contact ul li i{
+   margin-right: 8px;
+   font-size: 23px;
+}
+
+@media (max-width:900px){
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .foooooter{
+        flex-direction: column;
+       
+    }
+    .foooooter .desc-footer{
+    margin-bottom: 15px;
+    }
+    .footer-links,.footer-info,.footer-aboutUs{
+        width:90%;
+        margin-top: 20px ;
+    }
+    .footer-title{
+        margin-bottom: 5px;
+    }
+    .items-link-contact ul li{
+        padding-top: 10px;
+    }
+}
+

@@ -1,0 +1,93 @@
+.book-content{
+    display: flex;
+    padding: 30px 50px;
+    width:80%;
+}
+.book-content-img{
+    margin-right: 40px;
+    width:500px;
+    height: 400px;
+    object-fit: contain;
+}
+.book-content-info{
+    padding: 20px;
+}
+.back{
+    width:500px;
+    height: 490px;
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    padding-top: 50px;
+    margin-right: 20px;
+    
+}
+.book-title{
+   font-weight: 700;
+   font-size: 20px;
+   /* margin-bottom: 20px; */
+   margin-top: 10px;
+}
+span{
+    color: teal;
+    font-family: 600px;
+    font-size: 20px;
+}
+.book-author{
+    color: gray;
+    margin-bottom: 15px;
+}
+.book-add-to-cart-btn{
+    background-color: white;
+    width:180px;
+    height: 45px;
+    border:2px solid teal;
+    color:teal;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.book-add-to-cart-btn:hover{
+ background-color: rgb(123, 166, 76);
+ color: white;
+}
+
+.book-add-to-cart-btn i.bi-cart-plus{
+    margin-right: 5px;
+}
+.book-description{
+    font-size: 18px;
+    padding: 20px 50px;
+    width:80%;
+    line-height:1.8 ;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.book-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 40px;
+    margin-top: 20px; */
+    }
+.book-icon{
+    display: flex;
+    flex-direction: column;
+    color:teal;
+}
+small{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.book-icon i.bi-file-earmark-break{
+    color:teal;
+    margin:5px 0px;
+}
+@media(max-width:900px){
+    .book-content{
+        flex-direction: column;
+    }
+    .book-description{
+        width:95%;
+    }
+}
